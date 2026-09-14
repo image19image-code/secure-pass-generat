@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <!-- ========================================== -->
+    <!--     النسخة الخرافية الشاملة للـ SEO العالمي    -->
+    <!-- ========================================== -->
+
+    <!-- إعدادات اللغة والتوافقية -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- العنوان الأقوى عالمياً (يستهدف العربي والأجنبي باحترافية) -->
+    <title>Strong Password Generator & مولد كلمات مرور قوية وآمنة</title>
+
+    <!-- الوصف الجبار (Meta Description المزدوج لجذب النقرات CTR) -->
+    <meta name="description" content="Free secure random password generator and strong password maker. Create unbreakable passwords instantly. أداة مجانية وسريعة لتوليد كلمات مرور قوية وعشوائية لحماية حساباتك وحساباتك البنكية من الاختراق بنقرة زر واحدة.">
+
+    <!-- الكلمات الدلالية الأقوى عالمياً (Global Keywords) -->
+    <meta name="keywords" content="password generator, strong password creator, secure password maker, مولد كلمات مرور, إنشاء كلمة سر قوية, أداة توليد باسورد, حماية الحسابات">
+
+    <!-- توجيه محركات البحث العالمية للزحف والأرشفة الكاملة -->
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow">
+    <meta name="author" content="Professional Web Developer">
+
+    <!-- استهداف جغرافي عالمي (أمريكا، أوروبا، وكل قارات العالم) -->
+    <meta name="geo.placename" content="Global">
+    <meta name="distribution" content="global">
+    <meta name="rating" content="general">
+
+    <!-- ربط اللغات لعناكب البحث (SEO متعدد اللغات للظهور في أمريكا والعالم) -->
+    <link rel="alternate" hreflang="ar" href="#">
+    <link rel="alternate" hreflang="en" href="#">
+    <link rel="alternate" hreflang="x-default" href="#">
+
+    <!-- Open Graph الاحترافي لمنصات التواصل (فيسبوك، تويتر، واتساب، لينكد إن) -->
+    <meta property="og:title" content="Ultimate Strong Password Generator | مولد كلمات المرور الذكي">
+    <meta property="og:description" content="Generate secure, random, and unbreakable passwords instantly with our advanced tool. حماية فائقة لحساباتك عبر مولد كلمات السر الآمن.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="ar_AR">
+
+    <!-- Twitter Cards لظهور خارق في منصة إكس/تويتر -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Strong Password Generator - مولد كلمات المرور الآمن">
+    <meta name="twitter:description" content="Protect your accounts with ultra-strong, secure passwords generated instantly.">
+    <meta charset="UTF-8">
+    <meta name="google-site-verification" content="RvBe2hzpdS87UnJSqFPiecSztzHcRqUZGNIBBcOFWWE" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Password Generator | مولد كلمات المرور الآمن</title>
+    <meta name="google-site-verification" content="RvBe2hzpdS87UnJSqFPiecSztzHcRqUZGNIBBcOFWWE" />
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-color: #f8fafc;
+            --text-muted: #94a3b8;
+            --primary: #3b82f6;
+            --primary-hover: #2563eb;
+            --accent: #10b981;
+            --border: #334155;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 480px;
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 30px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 24px;
+        }
+
+        h1 {
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+
+        .lang-btn {
+            background: transparent;
+            border: 1px solid var(--border);
+            color: var(--text-color);
+            padding: 6px 12px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.85rem;
+        }
+
+        .lang-btn:hover {
+            border-color: var(--primary);
+        }
+
+        .password-display {
+            position: relative;
+            background: var(--bg-color);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 24px;
+            min-height: 60px;
+        }
+
+        #password-output {
+            font-family: monospace;
+            font-size: 1.1rem;
+            word-break: break-all;
+            letter-spacing: 1px;
+            color: var(--text-muted);
+        }
+
+        .copy-btn {
+            background: var(--primary);
+            border: none;
+            color: white;
+            padding: 8px 14px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 500;
+            font-size: 0.85rem;
+            flex-shrink: 0;
+            margin-inline-start: 10px;
+        }
+
+        .copy-btn:hover {
+            background: var(--primary-hover);
+        }
+
+        .controls {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .range-container {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .range-header {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        input[type="range"] {
+            width: 100%;
+            accent-color: var(--primary);
+            cursor: pointer;
+        }
+
+        .checkboxes {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+        }
+
+        .checkbox-label {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            cursor: pointer;
+        }
+
+        input[type="checkbox"] {
+            width: 16px;
+            height: 16px;
+            accent-color: var(--primary);
+            cursor: pointer;
+        }
+
+        .generate-btn {
+            width: 100%;
+            background: var(--primary);
+            border: none;
+            color: white;
+            padding: 14px;
+            border-radius: 12px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .generate-btn:hover {
+            background: var(--primary-hover);
+        }
+
+        .security-note {
+            text-align: center;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            margin-top: 20px;
+        }
+
+        .toast {
+            position: fixed;
+            bottom: 20px;
+            background: var(--accent);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            pointer-events: none;
+        }
+
+        .toast.show {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <!-- صندوق محتوى SEO ثنائي اللغة (عربي/إنجليزي) لتقوية الصدارة في محركات البحث العالمية -->
+<div style="margin-top: 30px; padding: 15px; border-radius: 8px; opacity: 0.85; font-size: 13px; text-align: center; direction: ltr;">
+  <p style="margin-bottom: 8px; color: #555;">
+    <strong>Secure Password Generator:</strong> Create strong, random, and unbreakable passwords to protect your online accounts, emails, and sensitive data from cyber threats instantly.
+  </p>
+  <p style="direction: rtl; color: #555;">
+    <strong>مولد كلمات المرور الآمن:</strong> أداة متطورة لإنشاء كلمات سر عشوائية ومعقدة لحماية حساباتك الشخصية، منصات التواصل، والبريد الإلكتروني من الاختراق والهجمات السيبرانية بأمان تام وبكل سهولة.
+  </p>
+</div>
+
+    <div class="container">
+        <div class="header">
+            <h1 id="app-title">مولد كلمات المرور الآمن</h1>
+            <button class="lang-btn" id="langToggle" onclick="toggleLanguage()">English</button>
+        </div>
+
+        <div class="password-display">
+            <span id="password-output">اضغط على زر التوليد بالأسفل</span>
+            <button class="copy-btn" id="copyText" onclick="copyPassword()">نسخ</button>
+        </div>
+
+        <div class="controls">
+            <div class="range-container">
+                <div class="range-header">
+                    <span id="lengthLabel">الطول:</span>
+                    <span id="lengthValue">16</span>
+                </div>
+                <input type="range" id="lengthRange" min="8" max="64" value="16" oninput="updateLength()">
+            </div>
+
+            <div class="checkboxes">
+                <label class="checkbox-label">
+                    <input type="checkbox" id="uppercase" checked> <span id="upperText">أحرف كبيرة (A-Z)</span>
+                </label>
+                <label class="checkbox-label">
+                    <input type="checkbox" id="lowercase" checked> <span id="lowerText">أحرف صغيرة (a-z)</span>
+                </label>
+                <label class="checkbox-label">
+                    <input type="checkbox" id="numbers" checked> <span id="numText">أرقام (0-9)</span>
+                </label>
+                <label class="checkbox-label">
+                    <input type="checkbox" id="symbols" checked> <span id="symText">رموز خاصة (!@#)</span>
+                </label>
+            </div>
+        </div>
+
+        <button class="generate-btn" id="generateBtn" onclick="generatePassword()">توليد كلمة مرور جديدة</button>
+
+        <div class="security-note" id="securityNote">
+            🔒 تشفير محلي بالكامل - لا يتم تخزين أو إرسال أي بيانات.
+        </div>
+    </div>
+
+    <div class="toast" id="toastMessage">تم النسخ بنجاح!</div>
+
+    <script>
+        let currentLang = 'ar';
+
+        const translations = {
+            ar: {
+                title: "مولد كلمات المرور الآمن",
+                langBtn: "English",
+                copyBtn: "نسخ",
+                copiedBtn: "تم!",
+                placeholder: "اضغط على زر التوليد بالأسفل",
+                lengthLabel: "الطول:",
+                upperText: "أحرف كبيرة (A-Z)",
+                lowerText: "أحرف صغيرة (a-z)",
+                numText: "أرقام (0-9)",
+                symText: "رموز خاصة (!@#)",
+                generateBtn: "توليد كلمة مرور جديدة",
+                securityNote: "🔒 تشفير محلي بالكامل - لا يتم تخزين أو إرسال أي بيانات.",
+                toast: "تم نسخ كلمة المرور بنجاح!"
+            },
+            en: {
+                title: "Secure Password Generator",
+                langBtn: "العربية",
+                copyBtn: "Copy",
+                copiedBtn: "Copied!",
+                placeholder: "Click generate button below",
+                lengthLabel: "Length:",
+                upperText: "Uppercase (A-Z)",
+                lowerText: "Lowercase (a-z)",
+                numText: "Numbers (0-9)",
+                symbols: "Symbols (!@#)",
+                symText: "Symbols (!@#)",
+                generateBtn: "Generate Password",
+                securityNote: "🔒 100% Client-side - No data is stored or shared.",
+                toast: "Password copied successfully!"
+            }
+        };
+
+        const chars = {
+            uppercase: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+            lowercase: "abcdefghijklmnopqrstuvwxyz",
+            numbers: "0123456789",
+            symbols: "!@#$%^&*()_+-=[]{}|;:,.<>?"
+        };
+
+        function updateLength() {
+            const range = document.getElementById('lengthRange');
+            document.getElementById('lengthValue').innerText = range.value;
+        }
+
+        function generatePassword() {
+            const length = document.getElementById('lengthRange').value;
+            let validChars = "";
+            
+            if (document.getElementById('uppercase').checked) validChars += chars.uppercase;
+            if (document.getElementById('lowercase').checked) validChars += chars.lowercase;
+            if (document.getElementById('numbers').checked) validChars += chars.numbers;
+            if (document.getElementById('symbols').checked) validChars += chars.symbols;
+
+            if (validChars === "") {
+                const out = document.getElementById('password-output');
+                out.style.color = 'var(--accent)';
+                out.innerText = currentLang === 'ar' ? "الرجاء اختيار خيار واحد على الأقل" : "Please select at least one option";
+                return;
+            }
+
+            let password = "";
+            const array = new Uint32Array(length);
+            window.crypto.getRandomValues(array);
+
+            for (let i = 0; i < length; i++) {
+                password += validChars[array[i] % validChars.length];
+            }
+
+            const out = document.getElementById('password-output');
+            out.style.color = 'var(--accent)';
+            out.innerText = password;
+        }
+
+        function copyPassword() {
+            const password = document.getElementById('password-output').innerText;
+            if (password.includes('اضغط') || password.includes('Click') || password.includes('اختر')) return;
+            
+            navigator.clipboard.writeText(password).then(() => {
+                const toast = document.getElementById('toastMessage');
+                toast.innerText = translations[currentLang].toast;
+                toast.classList.add('show');
+                setTimeout(() => {
+                    toast.classList.remove('show');
+                }, 2000);
+            });
+        }
+
+        function toggleLanguage() {
+            currentLang = currentLang === 'ar' ? 'en' : 'ar';
+            const t = translations[currentLang];
+            const html = document.documentElement;
+
+            html.setAttribute('lang', currentLang);
+            html.setAttribute('dir', currentLang === 'ar' ? 'rtl' : 'ltr');
+
+            document.getElementById('app-title').innerText = t.title;
+            document.getElementById('langToggle').innerText = t.langBtn;
+            document.getElementById('copyText').innerText = t.copyBtn;
+            document.getElementById('lengthLabel').innerText = t.lengthLabel;
+            document.getElementById('upperText').innerText = t.upperText;
+            document.getElementById('lowerText').innerText = t.lowerText;
+            document.getElementById('numText').innerText = t.numText;
+            document.getElementById('symText').innerText = t.symText;
+            document.getElementById('generateBtn').innerText = t.generateBtn;
+            document.getElementById('securityNote').innerText = t.securityNote;
+
+            const out = document.getElementById('password-output');
+            if (out.style.color !== 'var(--accent)') {
+                out.innerText = t.placeholder;
+            }
+        }
+    </script>
+</body>
+</html>
