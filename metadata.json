@@ -1,0 +1,8 @@
+{
+  "name": "Strong Password Generator & مولد كلمات مرور قوية وآمنة",
+  "description": "Free secure random password generator and strong password maker. Create unbreakable passwords instantly. أداة مجانية وسريعة لتوليد كلمات مرور قوية وعشوائية لحماية حساباتك وحساباتك البنكية من الاختراق بنقرة زر واحدة.",
+  "permissions": [],
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
